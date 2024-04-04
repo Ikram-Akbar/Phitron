@@ -1,0 +1,3 @@
+The first 5 natural number is :
+1 2 3 4 5 
+The Sum is : 15
