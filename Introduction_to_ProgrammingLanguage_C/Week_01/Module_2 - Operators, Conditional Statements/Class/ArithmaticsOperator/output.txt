@@ -1,0 +1,6 @@
+The sum of Two Number: 42 
+The subtructs of Two Number: 18 
+The Multiflication of Two Number: 360 
+The devided value of Two Number: 2.500000 
+The Modulus of Two Number: 12 
+ 

@@ -1,0 +1,1 @@
+Memory allocation for char variable: 1 bytes

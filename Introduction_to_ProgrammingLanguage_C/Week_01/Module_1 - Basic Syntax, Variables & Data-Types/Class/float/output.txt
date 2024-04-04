@@ -1,0 +1,7 @@
+ your floating Number is 5.223500 
+ your floating Number is 5 
+ your floating Number is 5.2 
+ your floating Number is 5.22 
+ your floating Number is 5.223 
+ your floating Number is 5.2235 
+ your floating Number is 5.22350 
