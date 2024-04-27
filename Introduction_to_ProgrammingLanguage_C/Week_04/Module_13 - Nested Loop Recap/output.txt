@@ -1,5 +1,2 @@
-1 
-1 2 
-1 2 3 
-1 2 3 4 
-1 2 3 4 5 
+Enter the size of the array: Enter the target sum: Enter 5 elements:
+Pair found: 15, 3
