@@ -1,4 +1,4 @@
-n er address : 0061FF1C
-ptr er value : 0061FF1C
-ptr er address : 0061FF18
-n er value : 55547
+x er address : 0061FF1C
+ new er value : 0061FF1C
+ new er value : 0061FF1C
+now x er value : 222222
