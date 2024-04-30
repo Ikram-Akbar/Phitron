@@ -1,4 +1,1 @@
-1th --> value: 20
-1th --> value: 20
-1th --> value: 20
-1th --> value: 20
+10 20 30 40 50 
