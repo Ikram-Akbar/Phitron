@@ -12,6 +12,7 @@ int main() {
         }
         int res;
         scanf("%d", & res);
+
         int length = sizeof(arr) / sizeof(int);
         int flag = 0;
         for (int i = 0; i < length; i++) {

@@ -1,6 +1,8 @@
 #include<stdio.h>
 int main()
 {
+    // take input from user: 
+
     int n;
     scanf("%d",&n);
     int arr[n];
@@ -8,6 +10,9 @@ int main()
     {
        scanf("%d",&arr[i]);
     }
+
+    // make the array element reverse: 
+
     int i = 0; 
     int j = n-1;
     while (i<j)
@@ -19,14 +24,13 @@ int main()
        i++;
        j--;
     }
-    
+
+    //print the array in reverse way : 
+
     for (int i = 0; i < n; i++)
     {
        printf("%d ",arr[i]);
     }
-    
 
-    
-     
     return 0;
 }
