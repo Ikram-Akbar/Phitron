@@ -1,4 +1,0 @@
-x er address : 0061FF1C
- new er value : 0061FF1C
- new er value : 0061FF1C
-now x er value : 222222
