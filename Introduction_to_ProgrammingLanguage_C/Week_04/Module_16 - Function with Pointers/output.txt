@@ -1,3 +1,4 @@
-main function er vitor : 40
- myFunc er vitor : 44444
- main func er vitor after change the value of x- 14
+x er address : 0061FF1C
+ new er value : 0061FF1C
+ new er value : 0061FF1C
+now x er value : 222222
