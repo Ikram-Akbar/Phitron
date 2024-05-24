@@ -1,1 +1,4 @@
-the number 44
+int- 44
+double- 10000
+float- 2.225
+lld- 9090000
