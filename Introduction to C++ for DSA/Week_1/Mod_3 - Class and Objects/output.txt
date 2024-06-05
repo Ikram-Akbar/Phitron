@@ -1,1 +1,4 @@
-25 5.9 1
+Name : Tamim Iqbal 
+Country : angladesh 
+ Run : 20
+Strick Rate : 144.45
