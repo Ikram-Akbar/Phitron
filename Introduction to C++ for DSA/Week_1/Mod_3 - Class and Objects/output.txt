@@ -1,4 +1,4 @@
-Name : Tamim Iqbal 
-Country : angladesh 
- Run : 20
-Strick Rate : 144.45
+Page: 320
+Price: 300
+Quantity: 125
+Rating: 8.8
