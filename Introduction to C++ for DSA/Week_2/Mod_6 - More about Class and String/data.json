@@ -1,0 +1,224 @@
+[
+    {
+      "job_title": "Resident Medical Officer (RMO)",
+      "company": "Al Noor Hospital & Diagnostic Center",
+      "educational_requirements": {
+        "mandatory": ["MBBS", "BMDC certified", "internship completed"],
+        "preferred": ["DMU (Ultrasonogram) course or CMU (Ultrasonogram) course", "PGT (Gynae)", "experience in eye care"]
+      },
+      "job_location": "Baroiyarhat, Mirsarai, Chittagong",
+      "contact": {
+        "name": "Md. Nazrul Islam",
+        "position": "Managing Director",
+        "phone": "01840742476"
+      }
+    },
+    {
+      "job_title": "Female Doctor",
+      "company": "Unnamed",
+      "working_days": "Weekly 6 days, Friday Off",
+      "duty_hours": "10 am to 5:00 pm (Lunch Break 1:30 hr)",
+      "job_responsibilities": ["Outdoor Chamber and USG"],
+      "job_requirements": ["MBBS with BMDC registration", "CMU/DMU"],
+      "salary": "Negotiable",
+      "benefits": ["Accommodation", "meal"],
+      "contact": "01680 344424"
+    },
+    {
+      "job_title": "Female RMO",
+      "company": "Anowara Ma Sishu Hospital",
+      "working_days": "2 days per week",
+      "job_requirements": ["MBBS", "CMU/DMU (must)", "PGT (gyn & obs)/expert in conduct NVD, D&C, OT assist"],
+      "basic_salary": "3000",
+      "additional_pay": {
+        "NVD/cs assist/d&c": "500",
+        "per usg": "200"
+      },
+      "benefits": ["Meal", "accommodation from clinic", "secure for female"],
+      "contact": {
+        "manager": "Anowara Ma O Sishu",
+        "phone": "+8801884070382"
+      }
+    },
+    {
+      "job_title": "Female Doctor",
+      "company": "Shomrita Diagnostic Center",
+      "working_hours": "9 am to 2 pm and 4 pm to 9 pm",
+      "job_location": "Lalmohan Upazila, Bhola",
+      "job_requirements": ["MBBS", "CMU/DMU", "proficiency in Ultrasonogram"],
+      "salary": "90,000/- (Negotiable)",
+      "contact": {
+        "name": "A. Rahman",
+        "phone": "01712 44 30 84"
+      }
+    },
+    {
+      "job_title": "Female RMO",
+      "company": "Coxs Merin City Hospital",
+      "job_location": "Cox's Bazar",
+      "job_requirements": ["MBBS", "CMU/DMU", "PGT (Gynae & Obs)"],
+      "residency": "Hospital",
+      "responsibilities": ["NVD", "D&C", "C/S (on discussion)"],
+      "contact": "01713825464"
+    },
+    {
+      "job_title": "Female RMO",
+      "company": "Unnamed",
+      "job_location": "Chowmhoni, Noakhali",
+      "job_requirements": ["MBBS", "CMU/DMU", "PGT (Gynae)", "2 years experience"],
+      "benefits": ["Accommodation (Hospital)", "Meal (Self)"],
+      "responsibilities": ["Visit, NVD, D&C, CS (Will be discussed)"],
+      "contact": "01703563914"
+    },
+    {
+      "job_title": "Couple Doctor",
+      "company": "Unnamed",
+      "job_location": "Char Alexander, Ramgoti, Laxmipur",
+      "qualifications_female": ["MBBS", "PGT/on course (Gynae & Obs)", "CMU (DMU preferable)"],
+      "responsibilities_female": ["Outdoor", "indoor", "c/s", "nvd", "dnc", "Ultra 8-10/per day"],
+      "qualifications_male": ["MBBS", "DA/PGT (anesthesia)"],
+      "responsibilities_male": ["Indoor", "outdoor medicine", "anesthesia"],
+      "benefits": ["Accommodation (Hospital)", "Food (Self)"],
+      "salary": "4.5 lac+ (Negotiable according to experience)",
+      "contact": {
+        "name": "Emon",
+        "phone": "+8801614-245345"
+      }
+    },
+    {
+      "job_title": "Female RMO",
+      "company": "Unnamed",
+      "job_location": "Munshiganj, Dhaka",
+      "job_requirements": ["MBBS", "CMU/DMU", "PGT (Gynae)", "2 years experience"],
+      "salary": "90K",
+      "benefits": ["Accommodation (Hospital)", "Meal (Self)"],
+      "responsibilities": ["Visit, NVD, D&C, CS (Will be discussed)"],
+      "contact": "01773580438"
+    },
+    {
+      "job_title": "Female Doctor",
+      "company": "Unnamed Diagnostic Center",
+      "job_location": "Muradnagar, Comilla",
+      "working_hours": "9 am - 1 pm and 4 pm - 6 pm",
+      "job_requirements": ["MBBS", "PGT (Gynae & Obs)", "CMU/DMU (Ultrasonogram)"],
+      "salary": "75,000 per month",
+      "benefits": ["Accommodation provided", "Meal (Self)"],
+      "contact": "01930873793"
+    },
+    {
+      "job_title": "Female Doctor",
+      "company": "Unicare General Hospital",
+      "job_requirements": ["MBBS", "CMU/DMU (Ultrasonogram proficiency)"],
+      "salary": "100,000 per month",
+      "benefits": ["Accommodation", "Meal (Hospital)"],
+      "contact": "Not provided"
+    },
+    {
+      "job_title": "Doctor",
+      "company": "Mizan Diagnostic Centre",
+      "job_location": "Daulatpur, Manikganj",
+      "working_days": "Monthly 28 days",
+      "working_hours": "10 am to 5:00 pm (Lunch Break 1:30 hr)",
+      "job_responsibilities": ["Outdoor Chamber and USG"],
+      "job_requirements": ["MBBS with BMDC registration", "CMU/DMU"],
+      "salary": "Negotiable",
+      "benefits": ["Accommodation", "Meal"],
+      "contact": "01680 344424"
+    },
+    {
+      "job_title": "Couple Doctor",
+      "company": "Bismillah Hospital",
+      "job_location": "Hajigonj, Chandpur",
+      "contact": [
+        "01717044328",
+        "01965533311"
+      ]
+    },
+    {
+      "job_title": "Female RMO (replace)",
+      "company": "Sitakundo General Hospital",
+      "job_location": "Sitakundo, Chottogram",
+      "duration": "10 days (08/01/23 at 12 pm to 18/01/23 at 12 pm)",
+      "job_requirements": ["MBBS with CMU/DMU"],
+      "salary": "3000 taka/day",
+      "additional_pay": {
+        "per NVD": "500 taka"
+      },
+      "contact": {
+        "name": "Dr. Abu Rafe",
+        "position": "Senior Medical Officer",
+        "phone": "01324400354"
+      }
+    },
+    {
+      "job_title": "Female RMO",
+      "company": "Unnamed",
+      "job_location": "Lakshmipur",
+      "job_requirements": ["MBBS", "CMU/DMU", "PGT (GYNAE & OBS)"],
+      "basic_salary": "3000 per day",
+      "additional_pay": {
+        "NVD": "500",
+        "D&C": "1000",
+        "OT Assist": "500",
+        "CS": "Negotiable"
+      },
+      "contact": "01608349561"
+    },
+    {
+      "job_title": "Female Doctor",
+      "company": "Zaker Ahmed Health Care Centre",
+      "job_location": "Uttor Mondia, Chhagalnaiya, Feni",
+      "working_days": "Weekly 2 days",
+      "working_hours": "Saturday, Tuesday, 10 am to 2:00 pm",
+      "job_requirements": ["MBBS with BMDC registration"],
+      "salary": "28,000",
+      "contact": {
+        "phone": "01814368136",
+        "email": "diuaftab@gmail.com"
+      }
+    },
+    {
+      "job_title": "Female Doctor",
+      "company": "Mizan Diagnostic Centre",
+      "job_location": "Daulatpur, Manikganj",
+      "working_days": "Weekly 7 days",
+      "working_hours": "10 am to 5:00 pm (Lunch Break 1:30 hr)",
+      "job_responsibilities": ["Outdoor Chamber and USG"],
+      "job_requirements": ["MBBS with BMDC registration", "CMU/DMU"],
+      "salary": "Negotiable",
+      "benefits": ["Accommodation", "Meal"],
+      "contact": "01680 344424"
+    },
+    {
+      "job_title": "Female Doctor",
+      "company": "Unnamed",
+      "job_location": "Bashkhali Upazila, Chittagong",
+      "working_days": "6 days per week",
+      "job_requirements": ["MBBS", "CMU/DMU (Ultrasonogram proficiency)"],
+      "salary": "Negotiable + 200 per USG",
+      "benefits": ["Free accommodation"],
+      "contact": {
+        "phone": "+8801755-870720",
+        "email": "shakhawat.h.edu@gmail.com"
+      }
+    },
+    {
+      "job_title": "Permanent Female Doctor / RMO",
+      "company": "Chatkhil Square Hospital",
+      "job_location": "Chatkhil, Noakhali",
+      "working_hours": "9:30 am to 2 pm, 2 hours lunch break, and then 4 pm to 8 pm",
+      "job_responsibilities": ["Outdoor chamber and USG"],
+      "job_requirements": ["MBBS with BMDC registration", "DGO/FCPS/MS (Gyne & Obs)", "CMU/DMU/ADMU"],
+      "salary": "8,000 tk per day (outdoor patient + USG included, negotiable based on experience)",
+      "additional_pay": {
+        "TVS, Breast, Thyroid Anomaly scan": "Additional payment",
+        "Perineal tear repair, stitch off": "Additional payment"
+      },
+      "benefits": ["Free accommodation", "Meal (Self)"],
+      "contact": {
+        "phone": "01838033333",
+        "email": "chatkhilsquarehospital24@gmail.com"
+      }
+    }
+  ]
+  
