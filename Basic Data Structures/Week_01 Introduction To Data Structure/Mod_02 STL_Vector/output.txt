@@ -1,8 +1,1 @@
-max size: 536870911
-empty element : 0
-Add 1st element : 1
-Add 2nd element : 2
-Add 3rd element : 4
-Add 4th element : 4
-Add 5th element : 8
-element of the vector : 10 20 147 147 147 147 147 147 
+10 20 24 25 12 2000 14 12 2000 32 31 30 2000  Found
