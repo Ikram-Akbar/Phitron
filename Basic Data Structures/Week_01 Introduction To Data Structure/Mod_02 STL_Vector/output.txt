@@ -1,4 +1,8 @@
-0 0 0 0 0 
------ 
-0
-5
+max size: 536870911
+empty element : 0
+Add 1st element : 1
+Add 2nd element : 2
+Add 3rd element : 4
+Add 4th element : 4
+Add 5th element : 8
+element of the vector : 10 20 147 147 147 147 147 147 
