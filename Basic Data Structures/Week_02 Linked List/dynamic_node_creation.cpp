@@ -15,14 +15,13 @@ class Node
 
 int main()
 {
-    Node a(200);
-    Node b(500);
+    Node* head = new Node(55);
+    Node* a = new Node(44);
 
-    a.next = &b;
+    head->next = a;
 
-    cout<<a.val<<endl;
-    cout<<(*a.next).val<<endl; //dereference 
-    // cout<<a.next->val<<endl; //shorthand
-     
-  return 0;
+    cout<<head->val<<endl;
+    cout<<a->val<<endl;
+    cout<<head->next->val<<endl;
+    return 0;
 }
