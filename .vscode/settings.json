@@ -3,5 +3,8 @@
         "aaabikkmrr",
         "cumilla",
         "ikram"
-    ]
+    ],
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }
