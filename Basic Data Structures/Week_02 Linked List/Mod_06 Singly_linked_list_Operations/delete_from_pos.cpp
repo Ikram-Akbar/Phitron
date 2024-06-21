@@ -15,9 +15,7 @@ void insert_at_tail(Node * & head, int v) {
   Node * newNode = new Node(v);
   if (head == NULL) {
     head = newNode;
-    cout<<"----------------"<<endl;
-    cout<<"Inserted at Head"<<endl;
-    cout<<"----------------"<<endl;
+    cout<<"===== ===== ====="<<endl<<"Inserted at Head"<<endl<<"===== ===== ====="<<endl;
     return;
   }
 
@@ -26,22 +24,18 @@ void insert_at_tail(Node * & head, int v) {
     temp = temp -> next;
   }
   temp -> next = newNode;
-  cout<<"----------------"<<endl;
-  cout<<"Inserted at Tail"<<endl;
-  cout<<"----------------"<<endl;
+  cout<<"==============="<<endl<<"Inserted at Tail"<<endl<<"==============="<<endl;
 };
 
 void print_Linked_list(Node * head) {
-  cout << "--- --- --- --- --- ---  --- --- --- --- " << endl<<endl;
-  cout << "Your Linked List : ";
-
+ 
+  cout << "===== Your Linked List ====="<<endl;
   Node * temp = head;
   while (temp != NULL) {
     cout << temp -> val << " ";
     temp = temp -> next;
   }
-  cout << endl<<endl;
-  cout << "--- --- --- --- --- ---  --- --- --- --- " << endl<<endl;
+  cout<<endl<<"==================="<<endl;;
 
 }
 
@@ -64,6 +58,18 @@ void insert_at_head(Node* &head, int val)
     head = newNode;
     cout<<endl<<"Inserted at head"<<endl;
 }
+void delete_node_by_position(Node* head, int pos)
+{
+    Node* temp = head;
+    for(int i=1; i<pos-1; i++)
+    {
+        temp = temp->next;
+    }
+
+    Node* deleteNode = temp->next;
+    temp->next = temp->next->next;
+    delete deleteNode;
+}
 
 int main() {
   Node * head = NULL;
@@ -75,7 +81,9 @@ int main() {
     cout << "Option 2 : Print the Linked List" << endl;
     cout << "Option 3 : Insert at Position" << endl;
     cout << "Option 4 : Insert at Head" << endl;
-    cout << "Option 5 : Terminate" << endl;
+    cout << "Option 5 : Delete a Node by Position" << endl;
+    cout << "Option 6 : Terminate" << endl;
+    cout << " =============== =============== " << endl;
 
     int option;
     cin >> option;
@@ -114,7 +122,14 @@ int main() {
         cin>>val;
         insert_at_head(head,val);
     }
-    else if (option == 5) 
+    else if(option == 5)
+    {
+        int pos;
+        cout<<"Enter Position: ";
+        cin>>pos;
+        delete_node_by_position(head,pos);
+    }
+    else if (option == 6) 
     {
       break;
     }
