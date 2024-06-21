@@ -14,6 +14,9 @@ void insert_at_tail(Node * & head, int v) {
   Node * newNode = new Node(v);
   if (head == NULL) {
     head = newNode;
+    cout<<"----------------"<<endl;
+    cout<<"Inserted at Head"<<endl;
+    cout<<"----------------"<<endl;
     return;
   }
 
@@ -22,10 +25,13 @@ void insert_at_tail(Node * & head, int v) {
     temp = temp -> next;
   }
   temp -> next = newNode;
+  cout<<"----------------"<<endl;
+  cout<<"Inserted at Tail"<<endl;
+  cout<<"----------------"<<endl;
 };
 
 void print_Linked_list(Node * head) {
-  cout << "--- --- --- --- --- ---  --- --- --- --- " << endl;
+  cout << "--- --- --- --- --- ---  --- --- --- --- " << endl<<endl;
   cout << "Your Linked List : ";
 
   Node * temp = head;
@@ -33,10 +39,24 @@ void print_Linked_list(Node * head) {
     cout << temp -> val << " ";
     temp = temp -> next;
   }
-  cout << endl;
-  cout << "--- --- --- --- --- ---  --- --- --- --- " << endl;
+  cout << endl<<endl;
+  cout << "--- --- --- --- --- ---  --- --- --- --- " << endl<<endl;
 
 }
+
+void insert_at_position(Node* head, int pos, int val)
+{
+    Node* newNode = new Node(val);
+    Node* temp = head;
+    for(int i=1; i<= pos-1; i++)
+    {
+        temp = temp->next;
+    }
+    // 
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+
 int main() {
   Node * head = NULL;
   while (true) {
@@ -44,7 +64,8 @@ int main() {
     cout << " ===== Chose a Option from this below ===== " << endl;
     cout << "Option 1 : Insert at Tail" << endl;
     cout << "Option 2 : Print the Linked List" << endl;
-    cout << "Option 3 : Terminate" << endl;
+    cout << "Option 3 : Insert at Position" << endl;
+    cout << "Option 4 : Terminate" << endl;
     int option;
     cin >> option;
     if (option == 1) {
@@ -52,9 +73,22 @@ int main() {
       cout << "Insert a Value : ";
       cin >> v;
       insert_at_tail(head, v);
-    } else if (option == 2) {
+    } 
+    else if (option == 2) 
+    {
       print_Linked_list(head);
-    } else if (option == 3) {
+    }
+    else if(option == 3)
+    {
+        int pos,val;
+        cout<<"Enter Position: ";
+        cin>>pos;
+        cout<<"Enter Value: ";
+        cin>>val;
+        insert_at_position(head,pos,val);
+    }
+    else if (option == 4) 
+    {
       break;
     }
   }
