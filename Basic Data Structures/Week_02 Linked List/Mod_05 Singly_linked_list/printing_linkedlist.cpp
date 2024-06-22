@@ -30,6 +30,19 @@ int main()
     while(temp != NULL)
     {
         cout<<temp->val<<endl;
+        /* 
+        0x1031ac0
+        0x1031980
+        0x1031a70
+        0x1031ae0
+        0
+        value: 
+        10
+        20
+        30
+        40
+        50
+         */
         temp = temp->next;
     }
     
