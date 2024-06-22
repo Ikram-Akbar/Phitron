@@ -15,7 +15,7 @@ void insert_at_tail(Node * & head, int v) {
   Node * newNode = new Node(v);
   if (head == NULL) {
     head = newNode;
-    cout<<"===== ===== ====="<<endl<<"Inserted at Head"<<endl<<"======= ========"<<endl;
+    cout<<"===== ===== ====="<<endl<<"Inserted at Head"<<endl<<"===== ===== ====="<<endl;
     return;
   }
 
@@ -69,6 +69,15 @@ void delete_node_by_position(Node* head, int pos)
     Node* deleteNode = temp->next;
     temp->next = temp->next->next;
     delete deleteNode;
+    cout<<endl<<"Deleted Position "<<pos<<endl<<endl;
+}
+
+void delete_head(Node* head)
+{
+    Node* deleteNode = head;
+    head = head->next;
+    delete deleteNode;
+    cout<<endl<<"Deleted Head "<<endl<<endl;
 }
 
 int main() {
@@ -82,7 +91,8 @@ int main() {
     cout << "Option 3 : Insert at Position" << endl;
     cout << "Option 4 : Insert at Head" << endl;
     cout << "Option 5 : Delete a Node by Position" << endl;
-    cout << "Option 6 : Terminate" << endl;
+    cout << "Option 6 : Delete Node Head" << endl;
+    cout << "Option 7 : Terminate" << endl;
     cout << " =============== =============== " << endl;
 
     int option;
@@ -127,9 +137,20 @@ int main() {
         int pos;
         cout<<"Enter Position: ";
         cin>>pos;
-        delete_node_by_position(head,pos);
+        if(pos == 0)
+        {
+            delete_head(head);
+        }
+        else
+        {
+            delete_node_by_position(head,pos);
+        }
     }
-    else if (option == 6) 
+    else if(option == 6)
+    {
+        delete_head(head);
+    }
+    else if (option == 7) 
     {
       break;
     }
