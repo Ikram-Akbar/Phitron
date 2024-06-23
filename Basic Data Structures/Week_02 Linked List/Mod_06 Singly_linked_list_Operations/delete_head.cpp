@@ -58,7 +58,7 @@ void insert_at_head(Node* &head, int val)
     head = newNode;
     cout<<endl<<"Inserted at head"<<endl;
 }
-void delete_node_by_position(Node* head, int pos)
+void delete_node_by_position(Node* &head, int pos)
 {
     Node* temp = head;
     for(int i=1; i<pos-1; i++)
@@ -72,7 +72,7 @@ void delete_node_by_position(Node* head, int pos)
     cout<<endl<<"Deleted Position "<<pos<<endl<<endl;
 }
 
-void delete_head(Node* head)
+void delete_head(Node* &head)
 {
     Node* deleteNode = head;
     head = head->next;
