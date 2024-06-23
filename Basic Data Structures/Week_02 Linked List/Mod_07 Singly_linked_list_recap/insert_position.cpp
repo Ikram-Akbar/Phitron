@@ -11,6 +11,18 @@ class Node {
   }
 };
 
+int size_of_linked_list(Node* head)
+{
+    int count = 0;
+    Node* temp = head;
+    while(temp != NULL)
+    {
+        count++;
+        temp = temp->next;
+    }
+    return count;
+}
+
 /*
     Insert at a Position : 
    *********************************************************
@@ -51,8 +63,14 @@ int main() {
 
   int pos, val;
   cin >> pos >> val;
-
-  insert_at_pos(head, pos, val);
+  if(pos > size_of_linked_list(head))
+  {
+    cout<<" invalid Index"<<endl;
+  }
+  else
+  {
+    insert_at_pos(head, pos, val);
+  }
   print_linked_list(head);
   return 0;
 }
