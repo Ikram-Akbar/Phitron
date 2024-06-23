@@ -32,7 +32,6 @@ int size_of_linked_list(Node* head)
    * => newNode er address ta ager ghorer next e assign kore dei.. 
    ***********************************************************
 */
-
 void insert_at_pos(Node * head, int pos, int val) {
   Node * newNode = new Node(val);
   Node * temp = head;
@@ -44,17 +43,34 @@ void insert_at_pos(Node * head, int pos, int val) {
 
 }
 
-/* void insert_at_head(Node* &head,int val)
+/*
+ * Insert at Head : 
+ * ***************************
+ * => Jeheto Head change korte hobe tahole funciton er ref dite hobe, ( & );
+ * => create a New Node ;
+ * => newNode er Next e Head er Memory address ta rakhete hobe - 
+ * => Head = newNode assign korete hobe.
+ */ 
+
+void insert_at_head(Node* &head, int val)
 {
     Node* newNode = new Node(val);
     newNode->next = head;
     head = newNode;
-} */
+}
 
-void insert_at_head(Node* &head, int val) {
+void insert_at_tail(Node* &head, Node* &tail, int val)
+{
     Node* newNode = new Node(val);
-    newNode->next = head;
-    head = newNode;
+    if(head == NULL)
+    {
+        head = newNode;
+        tail = newNode;
+        return;
+    }
+    tail->next = newNode;
+    tail = newNode;
+    cout<<endl<<"tail Updated"<<endl<<endl;
 }
 
 void print_linked_list(Node * head) {
@@ -71,6 +87,8 @@ int main() {
   Node * b = new Node(200);
   Node * c = new Node(300);
   Node * d = new Node(400);
+  Node * tail = d;
+
   head -> next = b;
   b -> next = c;
   c -> next = d;
@@ -89,6 +107,10 @@ int main() {
   else if(pos == 0)
   {
     insert_at_head(head,val);
+  }
+  else if(pos == size_of_linked_list(head))
+  {
+    insert_at_tail(head,tail,val);
   }
   else
   {
