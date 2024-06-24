@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
-
 using namespace std;
+
 class Node {
   public: int val;
   Node * next;
@@ -21,6 +21,17 @@ void delete_node(Node * head, int pos) {
   delete deleteNode;
 
 }
+
+void delete_head(Node* &head)
+{
+  Node*deleteNode = head;
+  head = head->next;
+  delete deleteNode;
+}
+
+
+
+
 
 void print_linked_list(Node * head) {
   Node * temp = head;
@@ -59,7 +70,11 @@ int main() {
 
   if (pos >= size_of_linked_list(head)) {
     cout << "Invalid Position" << endl;
-  } else {
+  }
+  else if(pos == 0) {
+    delete_head(head);
+  }
+   else {
     delete_node(head, pos);
   }
 
