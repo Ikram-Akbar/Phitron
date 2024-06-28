@@ -58,6 +58,18 @@ void insert_at_tail(Node* &head, int val)
     temp_node->next = current_node;
 }
 
+int size_of_linked_list(Node* head)
+{
+    Node* temp_node = head;
+    int count = 0;
+    while(temp_node != NULL)
+    {
+        count++;
+        temp_node = temp_node->next;
+    }
+    return count;
+}
+
 void print_linked_list(Node* head)
 {
     cout<<endl<<"Your linked list : ";
@@ -116,7 +128,8 @@ int main()
         }
         else if(option == 4)
         {
-           
+           int cnt = size_of_linked_list(head);
+           cout<<cnt<<endl;
 
         }
         else if(option == 5)
