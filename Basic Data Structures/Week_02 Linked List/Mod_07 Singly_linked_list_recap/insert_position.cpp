@@ -52,27 +52,24 @@ void insert_at_pos(Node * head, int pos, int val) {
  * => Head = newNode assign korete hobe.
  */ 
 
-void insert_at_head(Node* &head, int val)
-{
+void insert_at_head(Node* &head, int val){
     Node* newNode = new Node(val);
     newNode->next = head;
     head = newNode;
 }
 
-void insert_at_tail(Node* &head, Node* &tail, int val)
-{
-    Node* newNode = new Node(val);
-    if(head == NULL)
-    {
-        head = newNode;
-        tail = newNode;
-        return;
+void insert_at_tail(Node* &head, Node* &tail, int val){ 
+  Node* newNode = new Node(val);
+  if(head == NULL){
+      head = newNode;
+      tail = newNode;
+      return;
     }
     tail->next = newNode;
     tail = newNode;
     cout<<endl<<"tail Updated"<<endl<<endl;
-}
-
+  }
+  
 void print_linked_list(Node * head) {
   Node * temp = head;
   while (temp != NULL) {
