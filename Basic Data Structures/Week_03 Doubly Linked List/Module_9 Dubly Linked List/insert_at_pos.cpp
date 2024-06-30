@@ -52,6 +52,20 @@ void insert_at_pos(Node*head, int pos, int val)
     newNode->pre = temp;
 }
 
+int size(Node* head)
+{
+    Node* temp = head;
+    int count = 0;
+
+    while( temp != NULL)
+    {
+        count++;
+        temp = temp->next;
+    }
+    return count;
+
+}
+
 int main()
 {
     Node* head = new Node(10);
@@ -72,7 +86,16 @@ int main()
     // c->next = NULL;
     c->pre = b;
 
-    insert_at_pos(head,2,1000);
+    int pos, val;
+    cin>>pos>>val;
+    if(pos >= size(head))
+    {
+        cout<<"Invalid Index"<<endl;
+    }
+    else
+    {
+        insert_at_pos(head,pos,val);
+    }
     print_normal(head);
     print_reverse(tail);
     return 0;
