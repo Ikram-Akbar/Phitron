@@ -5,7 +5,7 @@ class Node
     public:
     int val;
     Node* next;
-};
+}; 
 
 int main()
 {
