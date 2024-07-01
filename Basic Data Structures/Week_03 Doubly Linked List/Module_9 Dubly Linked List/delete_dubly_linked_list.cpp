@@ -63,6 +63,20 @@ void delete_at_pos(Node* head, int pos)
     temp->next->pre = temp;
     delete deleteNode;
 }
+void delete_at_tail(Node*& tail)
+{
+    Node* deleteNode = tail;
+    tail = tail->pre;
+    delete deleteNode;
+    tail->next = NULL;
+}
+void delete_head(Node*& head)
+{
+    Node* deleteNode = head;
+    head = head->next;
+    delete deleteNode;
+    head->pre = NULL;
+}
 
 int main()
 {
@@ -84,6 +98,9 @@ int main()
     cin>>pos;
 
     delete_at_pos(head,pos);
+    delete_head(head);
+    delete_at_tail(tail);
+
     print_normal(head);
     print_reverse(tail);
     return 0;
