@@ -119,23 +119,23 @@ int main()
    
     int pos, val;
     cin>>pos>>val;
-    
-    if(pos == 0)
+    if(pos> size(head))
+    {
+        cout<<"Invalid Position";
+    }
+    else if(pos == 0)
     {
         insert_at_head(head,tail,val);
     }
-    else if(pos >= size(head))
+    else if(pos = size(head))
     {
-        cout<<"Invalid Index"<<endl;
+       insert_at_tail(head,tail,val);
     }
     else
     {
         insert_at_pos(head,pos,val);
     } 
 
-    /* int val;
-    cin>>val;
-    insert_at_tail(head,tail,val); */
     print_normal(head);
     print_reverse(tail);
     return 0;
