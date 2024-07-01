@@ -1,0 +1,2 @@
+
+    newNode->pre = tail;
