@@ -10,18 +10,22 @@ class myStack
     {
        v.push_back(val); 
     }
+
     void pop()
     {
         v.pop_back();
     }
+
     int top()
     {
         return v.back();
     }
+
     int size()
     {
         return v.size();
     }
+
     bool isEmpty ()
     {
         if (v.size() == 0 ) return true;
@@ -36,6 +40,6 @@ int main()
     myStack st;
     st.push(10);
     st.push(20);
-    cout<<st.top()<<endl;
+    cout<<st.top();
     return 0;
 }
