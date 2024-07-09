@@ -1,0 +1,2 @@
+Your List are => 2 4 6 
+6 4 2 
