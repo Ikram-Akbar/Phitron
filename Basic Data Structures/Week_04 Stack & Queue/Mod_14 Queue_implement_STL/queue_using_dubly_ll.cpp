@@ -5,14 +5,15 @@ class Node
 public:
     int val;
     Node *next;
+    Node *pre;
 
     Node(int val)
     {
         this->val = val;
         this->next = NULL;
+        this->pre = NULL;
     }
 };
-
 class myQueue
 {
 public:
@@ -28,52 +29,48 @@ public:
         {
             head = newNode;
             tail = newNode;
-
             return;
         }
-
         tail->next = newNode;
+        newNode->pre = tail;
         tail = tail->next;
     }
-
     void pop()
     {
         sz--;
         Node *deleteNode = head;
         head = head->next;
-        delete deleteNode;
         if (head == NULL)
         {
             tail = NULL;
+            delete deleteNode;
+            return;
         }
+        head->pre = NULL;
+        delete deleteNode;
     }
-
     int front()
     {
-        if (head != NULL)
-            return head->val;
-        else
-            throw runtime_error("Queue is empty");
+        return head->val;
     }
-
     int size()
     {
         return sz;
     }
-    bool isEmpty()
+    bool is_Empty()
     {
-        if (sz == 0)
+        if(sz == 0)
         {
             return true;
         }
-        else
-            return false;
+        else return false;
     }
 };
 
 int main()
 {
-    myQueue q;
+
+   myQueue q;
     int n;
     cin>>n;
     while(n--)
@@ -83,26 +80,11 @@ int main()
         q.push(x);
     }
 
-    while (!q.isEmpty())
+    while (!q.is_Empty())
     {
         cout<<q.front()<<endl;
         q.pop();
     }
     
-
-    /* q.push(10);
-    q.push(20);
-    q.push(30);
-
-    cout << q.front() << endl;
-    q.pop();
-    cout << q.front() << endl;
-    q.pop();
-    cout << q.front() << endl;
-    q.pop();
-    cout << q.front() << endl;
-    q.pop();
-    cout << q.front() << endl;
- */
     return 0;
 }
