@@ -14,9 +14,9 @@ public:
         this->right = NULL;
     }
 };
-
 int main()
 {
+
     Node *root = new Node(10);
     Node *a = new Node(20);
     Node *b = new Node(30);
@@ -29,15 +29,16 @@ int main()
     Node *i = new Node(100);
 
     // connection :
+    
     root->left = a;
     root->right = b;
     a->left = c;
     a->right = h;
+    b->right = d;
     c->right = e;
-    h->right = i;
-    b->left = d;
     d->left = f;
     d->right = g;
+    h->right = i;
 
     return 0;
 }

@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 class Node
 {
 public:
@@ -15,8 +16,17 @@ public:
     }
 };
 
+void postorder(Node *root)
+{
+    if (root == NULL)
+        return;
+    postorder(root->left);
+    postorder(root->right);
+    cout << root->val << " ";
+}
 int main()
 {
+
     Node *root = new Node(10);
     Node *a = new Node(20);
     Node *b = new Node(30);
@@ -29,15 +39,17 @@ int main()
     Node *i = new Node(100);
 
     // connection :
+
     root->left = a;
     root->right = b;
     a->left = c;
     a->right = h;
+    b->right = d;
     c->right = e;
-    h->right = i;
-    b->left = d;
     d->left = f;
     d->right = g;
+    h->right = i;
 
+    postorder(root);
     return 0;
 }
