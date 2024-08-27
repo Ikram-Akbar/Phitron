@@ -22,10 +22,15 @@ void level_order_print(Node *root)
 
     while (!q.empty())
     {
+        // 1st steps :
+
         Node *f = q.front();
         q.pop();
 
+        // second steps :
         cout << f->val << " ";
+
+        // 3rd steps :
         if (f->left != NULL)
             q.push(f->left);
         if (f->right != NULL)
