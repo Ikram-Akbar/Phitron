@@ -97,9 +97,22 @@ int main()
     cout<<"Enter a position : ";
     cin>>pos;
 
-    delete_at_pos(head,pos);
-    delete_head(head);
-    delete_at_tail(tail);
+    if(pos >= size(head))
+    {
+        cout<<"Invalid"<<endl;
+    }
+    else if(pos == 0)
+    {
+        delete_head(head);
+    }
+    else if(pos == size(head)-1)
+    {
+        delete_at_tail(tail);
+    }
+    else
+    {
+        delete_at_pos(head,pos);
+    }
 
     print_normal(head);
     print_reverse(tail);
