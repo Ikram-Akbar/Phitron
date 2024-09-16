@@ -1,0 +1,7 @@
+1. https://www.naukri.com/code360/problems/name_2035933
+2.https://www.codingninjas.com/studio/problems/preorder-binary-tree_5948
+3.https://www.codingninjas.com/studio/problems/inorder-traversal_3839605
+4.https://www.codingninjas.com/studio/problems/level-order-traversal_796002
+5.https://www.codingninjas.com/studio/problems/count-leaf-nodes_893055
+6.https://www.codingninjas.com/studio/problems/left-sum_920380
+7.https://www.codingninjas.com/studio/problems/tree-height_4609628

@@ -5,6 +5,7 @@ int main()
 {
     list<int>myList = {10,20,30,40};
     list <int > newList ;
+      
     // option 1 : 
     newList = myList;
     //option 2 : 
